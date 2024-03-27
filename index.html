@@ -105,6 +105,7 @@
       .zoom-effect:hover {
         transform: scale(1.1);
       }
+
       @media screen and (orientation: portrait) {
         body {
           margin-left: 5%;
@@ -118,6 +119,7 @@
         .about-img img {
           content: url("images/me.png");
         }
+      }
     </style>
 
   </head>
@@ -177,31 +179,31 @@
                   <span id="typing-animation"></span>
 
                   <script>
-  // Initialize the typing animation
-  const typingAnimationElement = document.getElementById('typing-animation');
+                    // Initialize the typing animation
+                    const typingAnimationElement = document.getElementById('typing-animation');
 
-  // Create an array of typing text
-  const typingTexts = ['Software Developer  ', 'Freelancer Artist  ', 'Video Editor  '];
+                    // Create an array of typing text
+                    const typingTexts = ['Software Developer     ', 'Freelancer Artist     ', 'Video Editor    '];
 
-  // Create a function to display the typing animation for a given text
-  function playTypingAnimation(text) {
-    // Loop through each character and add it to the element
-    for (let i = 0; i < text.length; i++) {
-      setTimeout(() => {
-        typingAnimationElement.textContent += text[i];
-      }, i * 100); // Decreased delay to speed up the typing animation
-    }
+                    // Create a function to display the typing animation for a given text
+                    function playTypingAnimation(text) {
+                      // Loop through each character and add it to the element
+                      for (let i = 0; i < text.length; i++) {
+                        setTimeout(() => {
+                          typingAnimationElement.textContent += text[i];
+                        }, i * 100); // Decreased delay to speed up the typing animation
+                      }
 
-    // Once the animation is complete, reset the text and start over
-    setTimeout(() => {
-      typingAnimationElement.textContent = '';
-      playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-    }, text.length * 100); // Adjusted delay accordingly
-  }
+                      // Once the animation is complete, reset the text and start over
+                      setTimeout(() => {
+                        typingAnimationElement.textContent = '';
+                        playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                      }, text.length * 100); // Adjusted delay accordingly
+                    }
 
-  // Start the typing animation loop
-  playTypingAnimation(typingTexts[0]);
-</script><br>
+                    // Start the typing animation loop
+                    playTypingAnimation(typingTexts[0]);
+                  </script><br><br>
                   <!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
                   <!-- <br> -->
                   <p>
@@ -379,11 +381,10 @@
               <h2>Freelancer Sketch Artist</h2>
               <span class="position">ig/anurag.sketches</span>
               <p class="mt-4">Freelance artist specializing in paid graphite and charcoal portraits. Self-taught and experienced in creating custom artwork. Find my portfolio on Instagram - @anurag.sketches
-<ul>
-  <li>Researching market trends to meet client demands.</li>
-  <li>Offering personalized art workshops for aspiring artists.</li>
-  <li>Collaborating with galleries to showcase my work.</li>
-
+                <ul>
+                  <li>Researching market trends to meet client demands.</li>
+                  <li>Offering personalized art workshops for aspiring artists.</li>
+                  <li>Collaborating with galleries to showcase my work.</li>
 
                 </ul>
               </p>
@@ -431,82 +432,7 @@
       </div>
     </section>
 
-    <!-- <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');"></a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading">
-                  <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a>
-                </h3>
-                <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');"></a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading">
-                  <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a>
-                </h3>
-                <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry">
-              <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');"></a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading">
-                  <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales dashboard Project for Beginners</a>
-                </h3>
-                <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br>
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');"></a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading">
-                  <a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a>
-                </h3>
-                <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');"></a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading">
-                  <a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a>
-                </h3>
-                <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
+    <!-- <section class="ftco-section" id="project-section"> <div class="container"> <div class="row justify-content-center mb-5 pb-5"> <div class="col-md-7 heading-section text-center ftco-animate"> <h1 class="big big-2">Projects</h1> <h2 class="mb-4">Projects</h2> <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p> </div> </div> <div class="row d-flex"> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a> </h3> <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p> </div> </div> </div> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a> </h3> <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p> </div> </div> </div> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry"> <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales dashboard Project for Beginners</a> </h3> <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p> </div> </div> </div> </div> <br> <div class="row d-flex justify-content-center"> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a> </h3> <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p> </div> </div> </div> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a> </h3> <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p> </div> </div> </div> </div> </div> </section> -->
 
     <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
       <div class="hid" style="visibility:hidden">
@@ -528,22 +454,7 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-              <div class="block-18">
-                <div class="text">
-                  <strong class="number" data-number="1000">0</strong>
-                  <span>Mentored Students</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-              <div class="block-18">
-                <div class="text">
-                  <strong class="number" data-number="500">0</strong>
-                  <span>Cups of coffee</span>
-                </div>
-              </div>
-            </div> -->
+            <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate"> <div class="block-18"> <div class="text"> <strong class="number" data-number="1000">0</strong> <span>Mentored Students</span> </div> </div> </div> <div class="col-md d-flex justify-content-center counter-wrap ftco-animate"> <div class="block-18"> <div class="text"> <strong class="number" data-number="500">0</strong> <span>Cups of coffee</span> </div> </div> </div> -->
           </div>
         </div>
       </div>
@@ -553,7 +464,7 @@
         <div class="row justify-content-center">
           <div class="col-md-7 ftco-animate text-center">
             <h2>Here's my<span>
-              <button id="gitbtn" class="btn btn-primary py-3 px-5" onclick="gitClick()">GitHub</button>
+                <button id="gitbtn" class="btn btn-primary py-3 px-5" onclick="gitClick()">GitHub</button>
               </span>
             </h2>
             <div class="heading">
@@ -636,41 +547,45 @@
                     <input type="hidden" name="access_key" value="53850583-f0df-4410-b578-7dcc38204284">
                     <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
                       <div class="col-12">
-                        <label for="fullname" class="form-label">Full Name <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="fullname" name="fullname" value="" required>
+                        <label for="fullname" class="form-label">Full Name
+                          <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="fullname" name="fullname" value="" required="required">
                       </div>
                       <div class="col-12 col-md-6">
-                        <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                        <label for="email" class="form-label">Email
+                          <span class="text-danger">*</span></label>
                         <div class="input-group">
                           <span class="input-group-text">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewbox="0 0 16 16">
+                              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
                             </svg>
                           </span>
-                          <input type="email" class="form-control" id="email" name="email" value="" required>
+                          <input type="email" class="form-control" id="email" name="email" value="" required="required">
                         </div>
                       </div>
                       <div class="col-12 col-md-6">
                         <label for="phone" class="form-label">Phone Number</label>
                         <div class="input-group">
                           <span class="input-group-text">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-                              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewbox="0 0 16 16">
+                              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                             </svg>
                           </span>
                           <input type="tel" class="form-control" id="phone" name="phone" value="">
                         </div>
-                      </div><br>  
+                      </div><br>
                       <div class="col-12">
-                        <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="subject" name="subject" value="" required>
+                        <label for="subject" class="form-label">Subject
+                          <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="subject" name="subject" value="" required="required">
                       </div>
                       <div class="col-12">
-                        <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
-                        <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                        <label for="message" class="form-label">Message
+                          <span class="text-danger">*</span></label>
+                        <textarea class="form-control" id="message" name="message" rows="3" required="required"></textarea>
                       </div>
                       <div class="col-12">
-                        <div class="d-grid"><br>  
+                        <div class="d-grid"><br>
                           <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
                         </div>
                       </div>
@@ -683,10 +598,7 @@
             <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
               <li class="ftco-animate normal-txt">Find me on
               </li>
-              <!-- <li class="ftco-animate">
-                <a href="https://www.youtube.com/@RishabhMishraOfficial">
-                  <span class="icon-youtube"></span></a>
-              </li> -->
+              <!-- <li class="ftco-animate"> <a href="https://www.youtube.com/@RishabhMishraOfficial"> <span class="icon-youtube"></span></a> </li> -->
               <li class="ftco-animate">
                 <a href="https://www.linkedin.com/in/anuragdevnath/">
                   <span class="icon-linkedin"></span></a>
@@ -695,10 +607,7 @@
                 <a href="https://twitter.com/devnathanurag7">
                   <span class="icon-twitter"></span></a>
               </li>
-              <!-- <li class="ftco-animate">
-                <a href="https://twitter.com/rishabhnmishra">
-                  <span class="icon-facebook"></span></a>
-              </li> -->
+              <!-- <li class="ftco-animate"> <a href="https://twitter.com/rishabhnmishra"> <span class="icon-facebook"></span></a> </li> -->
               <li class="ftco-animate">
                 <a href="https://www.instagram.com/anurag.sketches/">
                   <span class="icon-instagram"></span></a>
@@ -752,9 +661,9 @@
 
       <script src="js/main.js"></script>
       <script>
-function gitClick(){
-  window.location.href='https://github.com/anuragdevnath';
-}
+        function gitClick() {
+          window.location.href = 'https://github.com/anuragdevnath';
+        }
       </script>
 
     </body>
